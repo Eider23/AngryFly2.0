@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AngryFly.iml" filepath="$PROJECT_DIR$/.idea/modules/AngryFly.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android/AngryFly.android.iml" filepath="$PROJECT_DIR$/.idea/modules/android/AngryFly.android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/AngryFly.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/AngryFly.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/AngryFly.desktop.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/AngryFly.desktop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/html/AngryFly.html.iml" filepath="$PROJECT_DIR$/.idea/modules/html/AngryFly.html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ios/AngryFly.ios.iml" filepath="$PROJECT_DIR$/.idea/modules/ios/AngryFly.ios.iml" />
+    </modules>
+  </component>
+</project>
