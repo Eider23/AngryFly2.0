@@ -20,8 +20,8 @@ public class Tower {
     private Random rand;
 
     public  Tower(float y){
-        topTower = new Texture("obstaculosuperior.png");
-        bottomTower = new Texture("obstaculoinferior.PNG");
+        topTower = new Texture("obstaculoinferior.PNG");
+        bottomTower = new Texture("obstaculosuperior.png");
 
         rand = new Random();
 
