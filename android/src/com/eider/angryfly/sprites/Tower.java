@@ -14,51 +14,51 @@ public class Tower {
     private Texture topTower;
     private Texture bottomTower;
 
-    private Vector2 posTopTower;
     private Vector2 posBotTower;
+    private Vector2 posTopTower;
 
     private Random rand;
 
     public  Tower(float y){
-        topTower = new Texture("obstaculosuperior.png");
-        bottomTower = new Texture("obstaculoinferior.png");
+        topTower = new Texture("obstaculoinferior.PNG");
+        bottomTower = new Texture("obstaculosuperior.png");
 
         rand = new Random();
 
-        posTopTower = new Vector2(rand.nextInt(FLUCTUATION) + TOWER_GAP + LOWEST_OPENING,y );
-        posBotTower = new Vector2(posTopTower.x - TOWER_GAP - bottomTower.getHeight() , y);
+        posBotTower = new Vector2(rand.nextInt(FLUCTUATION) + TOWER_GAP + LOWEST_OPENING,y );
+        posTopTower = new Vector2(posBotTower.x - TOWER_GAP - topTower.getHeight() , y);
     }
 
     public Texture getTopTower() {
-        return topTower;
-    }
-
-    public void setTopTower(Texture topTower) {
-        this.topTower = topTower;
-    }
-
-    public Texture getBottomTower() {
         return bottomTower;
     }
 
-    public void setBottomTower(Texture bottomTower) {
+    public void setTopTower(Texture topTower) {
         this.bottomTower = bottomTower;
     }
 
+    public Texture getBottomTower() {
+        return topTower;
+    }
+
+    public void setBottomTower(Texture bottomTower) {
+        this.topTower = topTower;
+    }
+
     public Vector2 getPosTopTower() {
-        return posTopTower;
-    }
-
-    public void setPosTopTower(Vector2 posTopTower) {
-        this.posTopTower = posTopTower;
-    }
-
-    public Vector2 getPosBotTower() {
         return posBotTower;
     }
 
-    public void setPosBotTower(Vector2 posBotTower) {
+    public void setPosTopTower(Vector2 posTopTower) {
         this.posBotTower = posBotTower;
+    }
+
+    public Vector2 getPosBotTower() {
+        return posTopTower;
+    }
+
+    public void setPosBotTower(Vector2 posBotTower) {
+        this.posTopTower = posTopTower;
     }
 
 }

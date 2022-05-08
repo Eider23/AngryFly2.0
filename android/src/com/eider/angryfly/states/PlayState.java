@@ -17,7 +17,7 @@ public class PlayState extends State{
         bird = new Bird(320,50);
         camera.setToOrtho(false, (float) (Gdx.graphics.getWidth() /2.4), (float) (Gdx.graphics.getHeight()/2.7));
         bg = new Texture("fondo.png");
-        //tower = new Tower(100);
+        tower = new Tower(100);
     }
 
     @Override
@@ -41,8 +41,8 @@ public class PlayState extends State{
         spriteBatch.begin();
         spriteBatch.draw(bg, camera.position.x - (camera.viewportWidth / 2),camera.position.y - (camera.viewportHeight / 2));
         spriteBatch.draw(bird.getBird(), bird.getPosition().x,bird.getPosition().y);
-        ///spriteBatch.draw(tower.getTopTower(), tower.getPosTopTower().x, tower.getPosTopTower().y);
-        //spriteBatch.draw(tower.getBottomTower(), tower.getPosBotTower().x, tower.getPosBotTower().y);
+        spriteBatch.draw(tower.getTopTower(), tower.getPosTopTower().x, tower.getPosTopTower().y );
+        spriteBatch.draw(tower.getBottomTower(),  tower.getPosBotTower().x, tower.getPosBotTower().y );
         spriteBatch.end();
 
     }
