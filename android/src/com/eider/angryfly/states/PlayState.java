@@ -41,7 +41,7 @@ public class PlayState extends State{
         spriteBatch.begin();
         spriteBatch.draw(bg, camera.position.x - (camera.viewportWidth / 2),camera.position.y - (camera.viewportHeight / 2));
         spriteBatch.draw(bird.getBird(), bird.getPosition().x,bird.getPosition().y);
-        //spriteBatch.draw(tower.getTopTower(), tower.getPosTopTower().x, tower.getPosTopTower().y);
+        ///spriteBatch.draw(tower.getTopTower(), tower.getPosTopTower().x, tower.getPosTopTower().y);
         //spriteBatch.draw(tower.getBottomTower(), tower.getPosBotTower().x, tower.getPosBotTower().y);
         spriteBatch.end();
 
