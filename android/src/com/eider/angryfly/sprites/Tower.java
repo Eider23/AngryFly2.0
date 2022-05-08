@@ -7,26 +7,26 @@ import java.util.Random;
 
 public class Tower {
 
-    private static final int FLUCTUATION = 130;
-    private static final int TOWER_GAP = 100;
-    private static final int LOWEST_OPENING = 120;
+    private static final int FLUCTUATION = 150;
+    private static final int TOWER_GAP = 950;
+    private static final int LOWEST_OPENING = -200;
 
     private Texture topTower;
     private Texture bottomTower;
 
-    private Vector2 posBotTower;
     private Vector2 posTopTower;
+    private Vector2 posBotTower;
 
     private Random rand;
 
     public  Tower(float y){
-        topTower = new Texture("obstaculoinferior.PNG");
-        bottomTower = new Texture("obstaculosuperior.png");
+        topTower = new Texture("obstaculosuperior.png");
+        bottomTower = new Texture("obstaculoinferior.PNG");
 
         rand = new Random();
 
-        posBotTower = new Vector2(rand.nextInt(FLUCTUATION) + TOWER_GAP + LOWEST_OPENING,y );
-        posTopTower = new Vector2(posBotTower.x - TOWER_GAP - topTower.getHeight() , y);
+        posBotTower = new Vector2(rand.nextInt(FLUCTUATION) - TOWER_GAP - LOWEST_OPENING,y );
+        posTopTower = new Vector2(posBotTower.x + TOWER_GAP + topTower.getHeight() , y);
     }
 
     public Texture getTopTower() {

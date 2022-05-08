@@ -17,7 +17,7 @@ public class PlayState extends State{
         bird = new Bird(320,50);
         camera.setToOrtho(false, (float) (Gdx.graphics.getWidth() /2.4), (float) (Gdx.graphics.getHeight()/2.7));
         bg = new Texture("fondo.png");
-        tower = new Tower(100);
+        tower = new Tower(200);
     }
 
     @Override
